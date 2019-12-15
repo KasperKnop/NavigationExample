@@ -18,12 +18,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="DexItemType">
+    <style name="PokedexItemType">
         <item name="android:textSize">13sp</item>
         <item name="android:textColor">@color/black_alpha40</item>
         <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
         <item name="android:layout_gravity">left|center_horizontal|clip_horizontal</item>
-        <item name="android:background">@drawable/background_dex_list_item_type</item>
+        <item name="android:background">@drawable/background_pokedex_list_item_type</item>
     </style>
 
 </resources>

@@ -5,23 +5,23 @@
     <group android:id="@+id/data">
         <item
             android:id="@+id/nav_moves"
-            android:icon="@drawable/ic_menu_moves"
+            android:icon="@drawable/ic_moves"
             android:title="@string/menu_moves" />
         <item
             android:id="@+id/nav_abilities"
-            android:icon="@drawable/ic_menu_abilities"
+            android:icon="@drawable/ic_abilities"
             android:title="@string/menu_abilities" />
         <item
             android:id="@+id/nav_items"
-            android:icon="@drawable/ic_menu_items"
+            android:icon="@drawable/ic_items"
             android:title="@string/menu_items" />
         <item
             android:id="@+id/nav_locations"
-            android:icon="@drawable/ic_menu_locations"
+            android:icon="@drawable/ic_locations"
             android:title="@string/menu_locations" />
         <item
             android:id="@+id/nav_natures"
-            android:icon="@drawable/ic_menu_natures"
+            android:icon="@drawable/ic_natures"
             android:title="@string/menu_natures" />
 
     </group>
@@ -29,12 +29,12 @@
 
         <item
             android:id="@+id/nav_type_chart"
-            android:icon="@drawable/ic_menu_type_chart"
+            android:icon="@drawable/ic_type_chart"
             android:title="@string/menu_type_chart" />
 
         <item
             android:id="@+id/nav_iv_calculator"
-            android:icon="@drawable/ic_menu_iv_calculator"
+            android:icon="@drawable/ic_iv_calculator"
             android:title="@string/menu_iv_calculator" />
     </group>
 
@@ -42,17 +42,17 @@
 
         <item
             android:id="@+id/nav_settings"
-            android:icon="@drawable/ic_menu_settings"
+            android:icon="@drawable/ic_settings"
             android:title="@string/menu_settings" />
 
         <item
             android:id="@+id/nav_about"
-            android:icon="@drawable/ic_menu_about"
+            android:icon="@drawable/ic_about"
             android:title="@string/menu_about" />
 
         <item
             android:id="@+id/nav_help_and_feedback"
-            android:icon="@drawable/ic_menu_feedback"
+            android:icon="@drawable/ic_feedback"
             android:title="@string/menu_help_and_feedback" />
     </group>
 </menu>

@@ -68,7 +68,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    style="@style/DexItemType"
+                    style="@style/PokedexItemType"
                     android:id="@+id/list_item_dex_type_primary"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -76,7 +76,7 @@
                     tools:text="GRASS" />
 
                 <TextView
-                    style="@style/DexItemType"
+                    style="@style/PokedexItemType"
                     android:id="@+id/list_item_dex_type_secondary"
                     android:layout_height="match_parent"
                     android:layout_marginStart="8dp"
@@ -88,7 +88,7 @@
         </LinearLayout>
 
         <FrameLayout
-            android:background="@drawable/background_dex_entry_image"
+            android:background="@drawable/background_pokedex_list_item"
             android:gravity="center"
             android:id="@+id/list_item_dex_image_wrapper"
             android:layout_height="match_parent"
@@ -104,7 +104,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/list_item_pokedex"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/p1" />
+                tools:src="@drawable/test_pokemon" />
         </FrameLayout>
 
     </LinearLayout>
