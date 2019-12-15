@@ -1,0 +1,111 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="80dp"
+    android:layout_width="match_parent"
+    android:id="@+id/list_item_pokedex"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="9dp"
+    app:cardElevation="@dimen/standard_card_elevation"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:cardBackgroundColor="#009688"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+>
+
+    <LinearLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:id="@+id/list_item_dex_wrapper"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:paddingEnd="8dp"
+            android:paddingStart="16dp">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/list_item_dex_number"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    tools:text="#1" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/list_item_dex_name"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="28sp"
+                    tools:text="Bulbasaur" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/DexItemType"
+                    android:id="@+id/list_item_dex_type_primary"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    tools:text="GRASS" />
+
+                <TextView
+                    style="@style/DexItemType"
+                    android:id="@+id/list_item_dex_type_secondary"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:visibility="visible"
+                    tools:text="POISON" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:background="@drawable/background_dex_entry_image"
+            android:gravity="center"
+            android:id="@+id/list_item_dex_image_wrapper"
+            android:layout_height="match_parent"
+            android:layout_width="104dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/list_item_dex_image"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/list_item_pokedex"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/p1" />
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

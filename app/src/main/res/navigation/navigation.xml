@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_pokedex">
+
+    <fragment
+        android:id="@+id/nav_pokedex"
+        android:name="io.github.kasperknop.pokedb.PokedexFragment"
+        android:label="@string/title_pokedex"
+        tools:layout="@layout/fragment_pokedex" />
+
+    <fragment
+        android:id="@+id/navigation_teams"
+        android:name="io.github.kasperknop.pokedb.TeamsFragment"
+        android:label="@string/title_teams"
+        tools:layout="@layout/fragment_teams" />
+
+    <fragment
+        android:id="@+id/nav_moves"
+        android:name="io.github.kasperknop.pokedb.MovesFragment"
+        android:label="@string/menu_moves"
+        tools:layout="@layout/fragment_moves" />
+
+    <fragment
+        android:id="@+id/nav_abilities"
+        android:name="io.github.kasperknop.pokedb.AbilitiesFragment"
+        android:label="@string/menu_abilities"
+        tools:layout="@layout/fragment_abilities" />
+
+    <fragment
+        android:id="@+id/nav_items"
+        android:name="io.github.kasperknop.pokedb.ItemsFragment"
+        android:label="@string/menu_items"
+        tools:layout="@layout/fragment_items" />
+
+    <fragment
+        android:id="@+id/nav_locations"
+        android:name="io.github.kasperknop.pokedb.LocationsFragment"
+        android:label="@string/menu_locations"
+        tools:layout="@layout/fragment_locations" />
+
+    <fragment
+        android:id="@+id/nav_natures"
+        android:name="io.github.kasperknop.pokedb.NaturesFragment"
+        android:label="@string/menu_natures"
+        tools:layout="@layout/fragment_natures" />
+
+    <fragment
+        android:id="@+id/nav_type_chart"
+        android:name="io.github.kasperknop.pokedb.TypeChartFragment"
+        android:label="@string/menu_type_chart"
+        tools:layout="@layout/fragment_type_chart" />
+
+    <fragment
+        android:id="@+id/nav_iv_calculator"
+        android:name="io.github.kasperknop.pokedb.IVCalculatorFragment"
+        android:label="@string/menu_iv_calculator"
+        tools:layout="@layout/fragment_iv_calculator" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="io.github.kasperknop.pokedb.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_help_and_feedback"
+        android:name="io.github.kasperknop.pokedb.HelpAndFeedbackFragment"
+        android:label="@string/menu_help_and_feedback"
+        tools:layout="@layout/fragment_help_and_feedback" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="io.github.kasperknop.pokedb.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
