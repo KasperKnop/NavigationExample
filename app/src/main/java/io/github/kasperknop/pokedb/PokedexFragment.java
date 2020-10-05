@@ -13,15 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class PokedexFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_pokedex, container, false);
-        setupRecyclerView(root);
-        return root;
+        return inflater.inflate(R.layout.fragment_pokedex, container, false);
     }
 
-    private void setupRecyclerView(View root) {
-        RecyclerView recyclerView = root.findViewById(R.id.recyclerview_pokedex);
-        PokedexAdapter pokedexAdapter = new PokedexAdapter(getContext(), new PokemonDB().getPokemonList());
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(pokedexAdapter);
-    }
 }
